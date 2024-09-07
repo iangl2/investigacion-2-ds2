@@ -14,6 +14,7 @@ public class problema3 {
 
     }
     public static void main(String[] args) {
+        //Raul estuvo aqui
         String [] options={"Problema 1", "Problema 2", "Salir"};
         while (true) {
             var selection= JOptionPane.showOptionDialog(null, "Discount Percentage: ", 
