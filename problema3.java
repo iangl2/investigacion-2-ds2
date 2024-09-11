@@ -4,9 +4,12 @@
 import javax.swing.JOptionPane;
 
 public class problema3 {
-    public static void punto1() {
+    public static void punto1(float num, int cant) {
         //aquí trabajo yo 
-        System.out.println("hello world this the first method");
+        System.out.println(num+cant);
+      
+        
+
     }
     public static void punto2() {
         //aqui trabaja Raul
@@ -20,14 +23,27 @@ public class problema3 {
         while (true) {
             var selection= JOptionPane.showOptionDialog(null, "Discount Percentage: ", 
             "Select a Discount Option", 0, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
+            try {
+                
+                switch (selection) {
+                    case 0 -> {
+                        String decimal = JOptionPane.showInputDialog("Introduzca el numero a redondear");
+                        float decimalNum=Float.parseFloat(decimal);
+                        String cantidad = JOptionPane.showInputDialog("Introduzca la cantidad de decimales a redondear");
+                        int cantidadNum=Integer.parseInt(cantidad);
+                        punto1(decimalNum,cantidadNum);
+                        
+                    }
+                    case 1 -> punto2();
+                    default -> {
+                        return;
+                    }
+                }
+            } 
 
-            switch (selection) {
-                case 0 -> punto1();
-                case 1 -> punto2();
-                default -> {
-                    return;
+                catch (Exception e) {
+                    JOptionPane.showMessageDialog(null, "Introduzca un tipo de dato valido!","ERROR_MESSAGE", JOptionPane.ERROR_MESSAGE);
                 }
             }
         }
-    }
 }
