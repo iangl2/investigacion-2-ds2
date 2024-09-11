@@ -7,8 +7,16 @@ import javax.swing.JOptionPane;
 public class problema3 {
     public static void punto1(float num, int cant) {
         //aquí trabajo yo 
-        System.out.println(num+cant);
+
       
+        JOptionPane.showMessageDialog(null, 
+        "La suma es: "+
+        String.format("%."+cant+"f", num +cant)
+        +"\nLa resta es: "+
+        String.format("%."+cant+"f", num -cant)
+        +"\nLa multiplicacion es: "+
+        String.format("%."+cant+"f", num *cant)
+        , "Result", JOptionPane.INFORMATION_MESSAGE);
         
 
     }
