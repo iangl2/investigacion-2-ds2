@@ -1,6 +1,7 @@
 /**
  * problema3
  */
+import java.awt.HeadlessException;
 import javax.swing.JOptionPane;
 
 public class problema3 {
@@ -41,7 +42,7 @@ public class problema3 {
                 }
             } 
 
-                catch (Exception e) {
+                catch (HeadlessException | NumberFormatException e) {
                     JOptionPane.showMessageDialog(null, "Introduzca un tipo de dato valido!","ERROR_MESSAGE", JOptionPane.ERROR_MESSAGE);
                 }
             }
