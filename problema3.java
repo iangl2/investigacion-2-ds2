@@ -9,7 +9,7 @@ public class problema3 {
         //aquí trabajo yo 
 
       
-        return String.format(null, null)
+        return String.format("%."+cant+"f", num);
         
 
     }
