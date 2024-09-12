@@ -22,8 +22,8 @@ public class problema3 {
     }
     public static void punto2() {
         //aqui trabaja Raul
-        int ind=0, cont=0, reset;
-        float notas[] =new float[5], promedio=0, n_mayor=0, n_menor=0;
+        int ind, cont, reset;
+        float notas[] =new float[5], promedio=0, n_mayor=0, n_menor;
         String[] opciones  ={"Siguiente", "Cancelar"};
         String rango1="", rango2="", rango3="", rango4="";
         do {
