@@ -9,14 +9,7 @@ public class problema3 {
         //aquí trabajo yo 
 
       
-        JOptionPane.showMessageDialog(null, 
-        "La suma es: "+
-        String.format("%."+cant+"f", num +cant)
-        +"\nLa resta es: "+
-        String.format("%."+cant+"f", num -cant)
-        +"\nLa multiplicacion es: "+
-        String.format("%."+cant+"f", num *cant)
-        , "Result", JOptionPane.INFORMATION_MESSAGE);
+        return String.format(null, null)
         
 
     }
