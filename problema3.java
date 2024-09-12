@@ -5,7 +5,7 @@ import java.awt.HeadlessException;
 import javax.swing.JOptionPane;
 
 public class problema3 {
-    public static void punto1(float num, int cant) {
+    public static String punto1(float num, int cant) {
         //aquí trabajo yo 
 
       
@@ -78,7 +78,9 @@ public class problema3 {
                         float decimalNum=Float.parseFloat(decimal);
                         String cantidad = JOptionPane.showInputDialog("Introduzca la cantidad de decimales a redondear");
                         int cantidadNum=Integer.parseInt(cantidad);
-                        punto1(decimalNum,cantidadNum);
+                        JOptionPane.showMessageDialog(null, 
+                        punto1(decimalNum,cantidadNum)
+                        , "Result", JOptionPane.INFORMATION_MESSAGE); 
                         
                     }
                     case 1 -> punto2();
