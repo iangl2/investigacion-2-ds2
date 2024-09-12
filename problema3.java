@@ -75,8 +75,8 @@ public class problema3 {
         //Raul estuvo aqui
         String [] options={"Problema 1", "Problema 2", "Salir"};
         while (true) {
-            var selection= JOptionPane.showOptionDialog(null, "Discount Percentage: ", 
-            "Select a Discount Option", 0, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
+            var selection= JOptionPane.showOptionDialog(null, "Menu Investigacion 2", 
+            "Seleccione una opcion: ", 0, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
             try {
                 
                 switch (selection) {
