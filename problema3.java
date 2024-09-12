@@ -5,13 +5,16 @@ import java.awt.HeadlessException;
 import javax.swing.JOptionPane;
 
 public class problema3 {
-    public static String punto1(float num, int cant) {
+    public static float   punto1(float num, int cant) {
         //aquí trabajo yo 
-
-      
-        return String.format("%."+cant+"f", num);
         
-//asdfsadf
+        for (int i = 0; i < cant; i++) num*=10;
+        float reciduo = num%1;
+        if (reciduo>=0.5) num+=1;
+        num=num-reciduo;
+        for (int i = 0; i < cant; i++) num/=10;
+        
+        return num;
     }
     public static void punto2() {
         //aqui trabaja Raul
